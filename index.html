@@ -15,17 +15,24 @@
         display: flex;
         flex-direction: column;
     }
-    .player .screen {
+    .screen {
         flex-grow: 3;
     }
-    .player .bottom-controls {
+    .bottom-controls {
         background-color: black;
         display: flex;
     }
-    .player .left-buttons {
+    .left-buttons {
 
     }
-    .player .player-button {
+    .timer {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        display: flex;
+        align-self: center;
+    }
+    .player-button {
         border: none;
         color: white;
         background-color: transparent;
@@ -46,8 +53,19 @@
       <button class="player-button js-volume-button"><i class="fa fa-volume-off" aria-hidden="true"></i></button>
       <button class="player-button js-mute-button" hidden><i class="fa fa-volume-up" aria-hidden="true"></i></button>
     </div>
+    <div class="timer">
+      <div>
+        <span class="js-current-time"></span>
+      </div>
+      <div class="js-progress" style="background-color: blue;">
+        <div class="js-progress-slider" style="background-color: red;">Progress</div>
+      </div>
+      <div>
+        <span class="js-duration"></span>
+      </div>
+    </div>
     <div style="flex-grow: 1"></div>
-    <div class="right-buttons">
+    <div class="right-buttons" >
       <div class="fullscreen">
         <button class="player-button js-fullscreen-button fa fa-expand"></button>
       </div>
